@@ -18,11 +18,11 @@ elif ukjent_storrelse == '2':
     s = float(input(f'Skriv inn strekningen s:   '))
     t = float(input(f'Skriv inn tiden t:   '))
     v = s/t
-    print("farte v: ", v, fartsenhet)
+    print("farten v: ", v)
 
 elif ukjent_storrelse == '3':
     s = float(input(f'Skriv inn strekningen s:   '))
     v = float(input(f'Skriv inn farta v :    '))
     t = s/v
-    print('Tiden t:  ', t, tidsenhet)
+    print('Tiden t:  ', t)
 
