@@ -22,6 +22,7 @@ def strekning(T, a, v_0, t_0=0, s_0=0, dt=0.1):
         s.append(s_next)
 
         t_values.append(t + dt)
+    
         t = t_values[k+1]
         k = k + 1
 
