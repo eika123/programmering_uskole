@@ -15,6 +15,7 @@ def strekning(T, a, v_0, t_0=0, s_0=0, dt=0.1):
     t = t_values[k]
 
     while t < T:
+
         v_next = v[k] + dt*a(t, v[k], s[k])
         s_next = s[k] + dt*v[k]
 
@@ -77,10 +78,6 @@ if __name__ == '__main__':
     ylabel('høyde [m]')
     grid()
     show()
-    
-
-
-        
 
         
 
