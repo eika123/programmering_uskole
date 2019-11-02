@@ -80,7 +80,8 @@ if __name__ == '__main__':
     show()
 
         
+    "I wonder how the mx-red and mx-blue feels like"
 
-    
+
     
 
