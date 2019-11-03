@@ -1,15 +1,17 @@
 # installer pakkemanager chocolatey fra www.chocolatey.com
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) --y
 
 
-
-# kjør deretter kommandoene under
 ### programmer til programmering i skolen
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install unxutils			# installerer en rekke unix-kommandoer (touch, ls, cd, mkdir, rm, rmdir, grep, cat, gzip etc.)
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install clink			# bash-type autocompletion i windows cmd shell
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install anaconda3		# installer anaconda med python3-distribusjon
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install cmder			# forbedret shell (optional)
+# installerer en rekke unix-kommandoer (touch, ls, cd, grep etc.) samt
+# bash-type autokomplettering
+Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install unxutils --y		    
+Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install clink --y			
+
+C:\Users\eindr\Documents\GitHub\programmering_uskole
+Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install anaconda3 --y		
+Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install cmder --y		# forbedret shell (optional)
 
 
 conda install git                                                               # versjonskontroll
