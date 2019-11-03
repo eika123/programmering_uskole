@@ -9,7 +9,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install unxutils --y		    
 Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install clink --y			
 
-C:\Users\eindr\Documents\GitHub\programmering_uskole
+# installer anaconda (samling med programvare for programmering i bla. python)
 Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install anaconda3 --y		
 Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install cmder --y		# forbedret shell (optional)
 
