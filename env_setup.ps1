@@ -14,11 +14,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install anaconda3 --y
 
 # forbedret shell (optional)
 Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install cmder --y		
+Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install microsoft-windows-terminal --y
 
 
 # installer git for versjonskontroll og opprett et virtuelt miljø
 conda install git                                                               
-conda create -n envskole m2-base                                                # lager et virtuelt miljø
+conda create -n envskole m2-base                                                
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # arduino-ide
