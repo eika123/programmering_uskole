@@ -6,15 +6,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # installerer en rekke unix-kommandoer (touch, ls, cd, grep etc.) samt
 # bash-type autokomplettering
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install unxutils --y		    
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install clink --y			
+Set-ExecutionPolicy Bypass -Scope Process -Force; choco install unxutils --y		    
+Set-ExecutionPolicy Bypass -Scope Process -Force; choco install clink --y			
 
 # installer anaconda (samling med programvare for programmering i bla. python)
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install anaconda3 --y		
+Set-ExecutionPolicy Bypass -Scope Process -Force; choco install anaconda3 --y		
 
 # forbedret shell (optional)
-Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install cmder --y		
-#Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install microsoft-windows-terminal --y
+Set-ExecutionPolicy Bypass -Scope Process -Force; choco install cmder --y		
+#Set-ExecutionPolicy Bypass -Scope Process -Force; choco install microsoft-windows-terminal --y
 
 
 # installer git for versjonskontroll og opprett et virtuelt miljø
@@ -23,10 +23,10 @@ conda create -n envskole m2-base
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # arduino-ide
-# Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install arduino        
+# Set-ExecutionPolicy Bypass -Scope Process -Force; choco install arduino        
 
 # software for utvikling av elektronikk
-# Set-ExecutionPolicy Bypass -Scope Process -Foce; choco install fritzing       
+# Set-ExecutionPolicy Bypass -Scope Process -Force; choco install fritzing       
 
 
 
