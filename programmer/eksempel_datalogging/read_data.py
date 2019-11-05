@@ -1,7 +1,7 @@
 import pandas as pd
 from pylab import *
 
-df = pd.read_excel('temperature_data.xlsx')
+df = pd.read_excel('temperatur_data.xlsx')
 
 t = df['tid']
 T = df['temperatur']
