@@ -1,0 +1,16 @@
+# ignore swap files
+*.swp
+
+# ignore visual studio code folder
+.vscode/
+
+
+# ignore jupyter notebooks checkpoints
+*checkpoint.ipynb
+
+# ignore jupyter notebook checkpoints folder
+.ipynb_checkpoints/
+
+# ignore gitignore backupfiles
+..gitignore.un~
+.gitignore~

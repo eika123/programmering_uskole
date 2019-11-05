@@ -8,7 +8,6 @@ def modell_strekning(T, s_0):
     med utgangshastighet v_0
 
 
-
     ide: bruk sammenhengene under der s(t) er beregnet
     tidligere i programmet
     s(t + dt) = s(t) + dt*v(t)
@@ -19,7 +18,7 @@ def modell_strekning(T, s_0):
         v_0 = 10
         return v_0 + a*t
 
-    dt = 0.5/8 # tidssteg
+    dt = 0.1 # tidssteg
     t = [0]
 
     s = [s_0]
@@ -37,8 +36,11 @@ def modell_strekning(T, s_0):
 
     return t, s
 
-t, s = modell_strekning(2.41, 4)
+t, s = modell_strekning(3, 4)
 
+
+
+# plotting
 zero = zeros(len(t))
 
 figure()
@@ -46,5 +48,6 @@ plot(t, s)
 plot(t, zeros(len(t)))
 xlabel('tid [s]')
 ylabel('meter [m]')
+grid()
 show()
 
