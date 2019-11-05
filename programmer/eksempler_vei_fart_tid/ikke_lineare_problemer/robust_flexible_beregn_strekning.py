@@ -1,33 +1,36 @@
 from pylab import *
 
+
 def strekning(T, a, v_0, t_0=0, s_0=0, dt=0.1):
 
     """
     beregn strekningen et objekt har tilbakelagt fra posisjonen t_0
     etter tiden T med en variabel, kjent akselerasjon a(t, v, s)
+
+    input:
+    T - endetidspunkt på simuleringen
+    a - akselerasjonen. Funksjon av tre parametere
+    t_0 - starttidspunkt
+    s_0 - strekning ved tiden t=t_0
+    dt - størrelsen på tidssteget
     """
 
-    t_values = [0]
+    t = [0]
     v = [v_0]
     s = [s_0]
     k = 0
 
-    t = t_values[k]
-
-    while t < T:
-
-        v_next = v[k] + dt*a(t, v[k], s[k])
+    while t[k] < T:
+        v_next = v[k] + dt*a(t[k], v[k], s[k])
         s_next = s[k] + dt*v[k]
+        t_next = t[k] + dt
 
         v.append(v_next)
         s.append(s_next)
-
-        t_values.append(t + dt)
-    
-        t = t_values[k+1]
+        t.append(t_next)
         k = k + 1
 
-    return t_values, v, s    
+    return t, v, s    
 
 
 def distance_linear_acceleration_max_four_g():
@@ -80,7 +83,4 @@ if __name__ == '__main__':
     show()
 
         
-
-
-    
-
+    "I wonder how the mx-red and mx-blue feels like"

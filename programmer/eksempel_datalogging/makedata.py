@@ -1,4 +1,5 @@
 from pylab import *
+import pandas as pd
 
 # funksjon som generer "tilfeldig" temperaturdata
 def generer_data():
@@ -28,41 +29,16 @@ def generer_data():
     T_noisy = T + r
     return t, T_noisy, N
 
-
-
 t, T_noisy, N = generer_data()
 
+
 # lagre t og T_noisy til fil
-savetxt("temperature_data.csv", (t, T_noisy), delimiter=',', header='time, temperature', newline='\n')
+#savetxt("temperatur_data.csv", (t, T_noisy), delimiter=',', header='time, temperature', newline='\n')
+
+# dump data to excel format
+with pd.ExcelWriter('temperature_data.xlsx') as writer:
+    data = {'tid': t, 'temperatur': T_noisy}
+    df = pd.DataFrame(data)
+    df.to_excel(writer)
 
 
-# beregn noen statistiske størrelser
-# husk! N er antall målinger!
-gjennomsnitt = sum(T_noisy)/N
-variasjonsbredde = max(T_noisy) - min(T_noisy)
-tredje_kvartil = T_noisy[int(round(3*N/4))] 
-forste_kvartil = T_noisy[int(round(N/4))]
-kvartilbredde = tredje_kvartil - forste_kvartil
-
-print('')
-print("-------------------------------------------")
-print('              statistikk               ')
-print(f"       antall målinger:  {N:{5}}          ")
-print('--------------------------------------------')
-print(f"gjennomsnitt:    {gjennomsnitt:{10}.{4}}")
-print(f"variasjonsbredde:  {variasjonsbredde:{10}.{4}}")
-print(f"kvartilbredde:     {kvartilbredde:{10}.{4}}")
-
-print("-------------------------------------------")
-
-"""
-for temperature in T:
-    print(temperature)
-"""
-
-plot(t, T_noisy)
-xlabel('t [dager]')
-ylabel('Temperatur [grader celcius]')
-grid()
-show()
-figure()

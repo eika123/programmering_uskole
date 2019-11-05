@@ -14,3 +14,6 @@
 # ignore gitignore backupfiles
 ..gitignore.un~
 .gitignore~
+
+
+~$temperature_data.xlsx

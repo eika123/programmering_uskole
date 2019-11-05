@@ -7,7 +7,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 # installerer en rekke unix-kommandoer (touch, ls, cd, grep etc.) samt
 # bash-type autokomplettering
 #Set-ExecutionPolicy Bypass -Scope Process -Force; choco install unxutils --y		    
-#Set-ExecutionPolicy Bypass -Scope Process -Force; choco install clink --y			
+Set-ExecutionPolicy Bypass -Scope Process -Force; choco install clink --y			
 # bli kvitt irriterende langt prompt
 # Endrer på miljøvariabelen PROMPT
 #cmd
