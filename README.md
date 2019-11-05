@@ -10,7 +10,7 @@ programmer/
 	grunnleggende/
 	|		|
 	|		 ----> komme_igang/
-	|		|				|
+	|       |                |
 	|		|				 -----> hello_world.py, personlig_hilsen.py, strenger.py
 	|		|				
 	|		|
@@ -29,21 +29,24 @@ programmer/
 	|
 	|
 	eksempler_vei_fart_tid/
-	|			|
-	|			 -----> ikke_lineare_problemer/
-				|				|
-				|				 ----> beregn_strekning_modellproblem.py, beregn_strekning_variabel_akselerasjon.py
-	|			|	
-	|			|
-	|			|-----> proporsjonale_problemer/
-	|									|
-	|									 ----> fleksible_programmer/
-	|									|				|
-	|									|				 -----> vei_fart_tid.py, vei_fart_tid_samlet.py
-	|									|				
-	|									|				
-	|									-----> primitive_programmer/
-	|									|				|
-	|									|				 -----> vei_fart_tid_finn_s.py, vei_fart_tid_finn_t.py vei_fart_tid_finn_v.py, 
+	|        |
+	|         -----> ikke_lineare_problemer/
+	|                   |
+	                    ----> beregn_strekning_modellproblem.py,
+						      beregn_strekning_variabel_akselerasjon.py
+	|   |	
+	|   |
+	|   |-----> proporsjonale_problemer/
+	|   						|
+	|   						 ----> fleksible_programmer/
+	|   						|				|
+	|   						|				 -----> vei_fart_tid.py, vei_fart_tid_samlet.py
+	|   						|				
+	|   						|				
+	|   						-----> primitive_programmer/
+	|   						|				|
+	|   						|				 -----> vei_fart_tid_finn_s.py,
+														vei_fart_tid_finn_t.py,
+														vei_fart_tid_finn_v.py, 
 
 ```
