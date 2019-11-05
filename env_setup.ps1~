@@ -8,11 +8,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 # bash-type autokomplettering
 #Set-ExecutionPolicy Bypass -Scope Process -Force; choco install unxutils --y		    
 #Set-ExecutionPolicy Bypass -Scope Process -Force; choco install clink --y			
-# bli kvitt irriterende langt prompt
-# Endrer på miljøvariabelen PROMPT
-#cmd
-#setx PROMPT skriv kommando$$$S
-#powershell
 
 # installer anaconda (samling med programvare for programmering i bla. python)
 #Set-ExecutionPolicy Bypass -Scope Process -Force; choco install anaconda3 --y		
@@ -21,6 +16,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 Set-ExecutionPolicy Bypass -Scope Process -Force; choco install cmder --y		
 #Set-ExecutionPolicy Bypass -Scope Process -Force; choco install microsoft-windows-terminal --y
 
+# bli kvitt irriterende langt prompt
+# Endrer på miljøvariabelen PROMPT
+cmd
+setx PROMPT giefinput$$$S
+powershell
 
 # installer git for versjonskontroll og opprett et virtuelt miljÃ¸
 conda install git                                                               
