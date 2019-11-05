@@ -32,11 +32,11 @@ def generer_data():
 t, T_noisy, N = generer_data()
 
 
-# lagre t og T_noisy til fil
-#savetxt("temperatur_data.csv", (t, T_noisy), delimiter=',', header='time, temperature', newline='\n')
+# lagre t og T_noisy til fil som kommaseparert liste
+savetxt("temperatur_data.csv", (t, T_noisy), delimiter=',', header='time, temperature', newline='\r')
 
-# dump data to excel format
-with pd.ExcelWriter('temperature_data.xlsx') as writer:
+# lagre t og T_noisy i excel-format.
+with pd.ExcelWriter('temperatur_data.xlsx') as writer:
     data = {'tid': t, 'temperatur': T_noisy}
     df = pd.DataFrame(data)
     df.to_excel(writer)

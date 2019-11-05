@@ -8,6 +8,7 @@ T = df['temperatur']
 N = len(T)
 
 
+# regner med dette er mer aktuelt for elever.
 # beregn noen statistiske størrelser
 # husk! N er antall målinger!
 gjennomsnitt = sum(T)/N
@@ -33,15 +34,17 @@ for temperature in T:
     print(temperature)
 """
 
+figure()
 plot(t, T)
 xlabel('t [dager]')
 ylabel('Temperatur [grader celcius]')
 grid()
 show()
-figure()
 
 # lag boxplot
+figure()
 df.boxplot('temperatur')
+show()
 
 
 def calculate_statistics(df):
