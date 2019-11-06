@@ -5,6 +5,7 @@ programmer: mappe med python-programmer
 dokumenter: mappe med jupyter-notebooks
 
 
+<pre>
 Folder PATH listing
 Volume serial number is 74C6-6A1D
 C:.
@@ -25,3 +26,4 @@ C:.
     �   ����komme_igang
     �   ����lese_inn_tall
     ����moro
+<pre>
