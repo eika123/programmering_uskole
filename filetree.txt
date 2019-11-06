@@ -1,15 +1,17 @@
-# Hva programmering kan brukes til i ungdomsskolen med kort introduksjon
-Du finner programvare i mappen programmer.
-Du finner lenker og andre ressurser under mappen dokumenter.
-
-
-## Mappestruktur
-/root
+Folder PATH listing
+Volume serial number is 74C6-6A1D
+C:.
+|   ..gitignore.un~
+|   .env_setup.ps1.un~
 |   .gitignore
+|   .gitignore~
+|   .README.md.un~
 |   env_setup.ps1
+|   env_setup.ps1~
 |   filetree.txt
 |   LICENSE
 |   README.md
+|   README.md~
 |   
 +---.vscode
 |       settings.json
