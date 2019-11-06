@@ -4,6 +4,7 @@ Du finner lenker og andre ressurser under mappen dokumenter.
 
 
 ## Mappestruktur
+<pre>
 /root
 |   .gitignore
 |   env_setup.ps1
@@ -68,4 +69,4 @@ Du finner lenker og andre ressurser under mappen dokumenter.
     |           
     \---moro
             sensur.py
-            
+<pre>
