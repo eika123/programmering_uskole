@@ -17,3 +17,8 @@
 
 
 ~$temperature_data.xlsx
+
+# ignore latex output files except pdfs
+.log
+.aux
+.dvi
