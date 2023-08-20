@@ -1,4 +1,4 @@
-# Hva programmering kan brukes til i ungdomsskolen med kort introduksjon
+# Programmeringsressurser til bruk i skole
 Du finner programvare i mappen programmer.
 Du finner lenker og andre ressurser under mappen dokumenter.
 
